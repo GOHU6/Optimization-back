@@ -1,4 +1,4 @@
-package com.group;
+package com.group.benchmark;
 
 public class BenchmarkRunner {
     public static void main(String[] args) throws Exception {

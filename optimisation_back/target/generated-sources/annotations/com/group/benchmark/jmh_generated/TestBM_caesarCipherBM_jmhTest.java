@@ -1,4 +1,4 @@
-package com.group.jmh_generated;
+package com.group.benchmark.jmh_generated;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -32,7 +32,7 @@ import org.openjdk.jmh.results.ScalarResult;
 import org.openjdk.jmh.results.AggregationPolicy;
 import org.openjdk.jmh.runner.FailureAssistException;
 
-import com.group.jmh_generated.TestBM_jmhType;
+import com.group.benchmark.jmh_generated.TestBM_jmhType;
 public final class TestBM_caesarCipherBM_jmhTest {
 
     byte p000, p001, p002, p003, p004, p005, p006, p007, p008, p009, p010, p011, p012, p013, p014, p015;
