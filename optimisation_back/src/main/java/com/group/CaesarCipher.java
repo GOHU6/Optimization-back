@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 //Caesar Cipher Optimization in Java
 public class CaesarCipher {
 
-    public static String encrypt(String text, int shift) {
+    public String encrypt(String text, int shift) {
         char[] chars = text.toCharArray();
         for (int i = 0; i < chars.length; i++) {
             chars[i] = (char) ((chars[i] + shift) % 256);
@@ -14,10 +14,10 @@ public class CaesarCipher {
         
     }
 
-    public static String decrypt(String text, int shift) {
+    public String decrypt(String text, int shift) {
         return encrypt(text, 256 - shift);
     }
-    public static void main(String[] args) {
+    /* public static void main(String[] args) {
 
         String message = "Hello World";
 
@@ -39,5 +39,5 @@ public class CaesarCipher {
         System.out.printf("Seconds: %f ms\n", seconds);
         System.out.printf("Seconds2: %f ms\n", secondDecimalPrecision);
         System.out.printf("Minutes: %f ms\n", minutes);
-    }
+    } */
 }
