@@ -1,22 +1,36 @@
 package com.group;
+
 import org.openjdk.jmh.annotations.*;
 
 public class TestBM {
-
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
+    @BenchmarkMode(Mode.All)
     @Fork(value = 1)
     @Warmup(iterations = 2)
     @Measurement(iterations = 1)
     public void init() {
+
+        String txt = "test";
+        caesarCipherResult(txt);
+    }
+
+    public static String encrypt(String text, int shift) {
+        char[] chars = text.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            chars[i] = (char) ((chars[i] + shift) % 256);
+        }
+        return new String(chars);
+    }
+
+    public static String decrypt(String text, int shift) {
+        return encrypt(text, 256 - shift);
+    }
+
+    public static void caesarCipherResult(String message){
+        String encrypted = encrypt(message, 0);
+        //System.out.println(encrypted);
         
-
-        CaesarCipher caesarCipher = new CaesarCipher();
-        String encryptedMessage = caesarCipher.encrypt("null", 0);
-        String decryptedMessage = caesarCipher.decrypt(encryptedMessage, 3);
-
-        System.out.println("Encrypted: " + encryptedMessage);
-        System.out.println("Decrypted: " + decryptedMessage); 
-
+        String decrypted = decrypt(encrypted, 3);
+        //System.out.println(decrypted);
     }
 }

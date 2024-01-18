@@ -76,7 +76,6 @@ public final class TestBM_init_jmhTest {
             control.announceWarmupReady();
             while (control.warmupShouldWait) {
                 l_testbm0_0.init();
-                if (control.shouldYield) Thread.yield();
                 res.allOps++;
             }
 
@@ -87,7 +86,6 @@ public final class TestBM_init_jmhTest {
             try {
                 while (control.warmdownShouldWait) {
                     l_testbm0_0.init();
-                    if (control.shouldYield) Thread.yield();
                     res.allOps++;
                 }
             } catch (Throwable e) {
@@ -145,7 +143,6 @@ public final class TestBM_init_jmhTest {
             control.announceWarmupReady();
             while (control.warmupShouldWait) {
                 l_testbm0_0.init();
-                if (control.shouldYield) Thread.yield();
                 res.allOps++;
             }
 
@@ -156,7 +153,6 @@ public final class TestBM_init_jmhTest {
             try {
                 while (control.warmdownShouldWait) {
                     l_testbm0_0.init();
-                    if (control.shouldYield) Thread.yield();
                     res.allOps++;
                 }
             } catch (Throwable e) {
@@ -214,7 +210,6 @@ public final class TestBM_init_jmhTest {
             control.announceWarmupReady();
             while (control.warmupShouldWait) {
                 l_testbm0_0.init();
-                if (control.shouldYield) Thread.yield();
                 res.allOps++;
             }
 
@@ -229,7 +224,6 @@ public final class TestBM_init_jmhTest {
             try {
                 while (control.warmdownShouldWait) {
                     l_testbm0_0.init();
-                    if (control.shouldYield) Thread.yield();
                     res.allOps++;
                 }
             } catch (Throwable e) {
