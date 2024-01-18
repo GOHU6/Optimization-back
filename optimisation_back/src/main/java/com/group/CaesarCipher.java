@@ -18,27 +18,26 @@ public class CaesarCipher {
     public static void caesarCipherResult(String message){
         String encrypted = encrypt(message, 0);
         System.out.println(encrypted);
-        
+        System.out.println("\n--------\n");
         String decrypted = decrypt(encrypted, 3);
         System.out.println(decrypted);
     }
 
     public static void main(String[] args) {
 
-        String message = "Hello World";
+        String message = "zzzzzzzzzzzzzzzzzddddyyyyyyyyyyyyygggxxxxxxxxxxxxxxbbbbbbbbbbbbbbnnnnnnnnnnnnqqqwwwwwwwwwwrrrrrryyyyyyfffffffffuqqqqqqqqqqmmmmmmmmmmmmmmmmmmmmmmmmsjjjjjjjjjjjjjnnnnnnnqqqqfffffffffffffkkkkkccccbtttttsssssssfffffffffccccccccccccgggggggmmmmmmmmmmhhhhhhhhhhhhzzzzzzzzzwwwwwwwwwwwwwnnnnnnnnnnnnnnngggggggggggggbbbbbbbbbbbqqqttttggwwwaauuuuuuuuuuugggggoooooooooouutttttttttttttgggkkkkkkxxxxwwwwwwwwwwwwuuuuuuueeeeeeeeeeeeennnnnnnnnnnnnmmmmmmmmmxxxccccccrrrrzzzzzzzzqqqqqqqqqqqqqdddddddnnnnnnnnnnnnnoljjjjjjjjjjjkkkkkkkkkcaaajjjjjjjjjjkkkkkkkkktttyyyyyyyyyyyyyyywwwwwwwweeeeeeeeeeexxxxxxxxxxxxxxxffffjjjjjjccccccccccccccrrhhhhhhhhhhhvvvvvvvvvvvvviiiiiiiiiiiiiiggpppppkkkkkkkkkkkkkknnnnwwwwwwwwwwwbbvvvvvvvvvvvvvvydddddaaaeeeeeeeeeeeeeeeeeeyyyyyyyyyyyaammmssssssshhhhhhhhhhhhzzzqqqqqqqqqqqqqqqxxxxxxxxpppppppppppppppxxxxxxxmmmmmmmmkkkkkkkkkkkkkkdddrrrrrrrrddddddddddddddzzzzzzzzzzzzzzaaaaaammmmmmmmmmmmmmmlqqqqqqqqqpppppppppppeeeeeeiiiiiiiiiiiiiiiyyyyyyyyyyyyynnnnnnnnnnkkkkkkkkkkkkkkuuuuuuuuuuuutjjjjjssszzzzzzzzzzzzzzzzzzzddddyyyyyyyyyyyyygggxxxxxxxxxxxxxxbbbbbbbbbbbbbbnnnnnnnnnnnnqqqwwwwwwwwwwrrrrrryyyyyyfffffffffuqqqqqqqqqqmmmmmmmmmmmmmmmmmmmmmmmmsjjjjjjjjjjjjjnnnnnnnqqqqfffffffffffffkkkkkccccbtttttsssssssfffffffffccccccccccccgggggggmmmmmmmmmmhhhhhhhhhhhhzzzzzzzzzwwwwwwwwwwwwwnnnnnnnnnnnnnnngggggggggggggbbbbbbbbbbbqqqttttggwwwaauuuuuuuuuuugggggoooooooooouutttttttttttttgggkkkkkkxxxxwwwwwwwwwwwwuuuuuuueeeeeeeeeeeeennnnnnnnnnnnnmmmmmmmmmxxxccccccrrrrzzzzzzzzqqqqqqqqqqqqqdddddddnnnnnnnnnnnnnoljjjjjjjjjjjkkkkkkkkkcaaajjjjjjjjjjkkkkkkkkktttyyyyyyyyyyyyyyywwwwwwwweeeeeeeeeeexxxxxxxxxxxxxxxffffjjjjjjccccccccccccccrrhhhhhhhhhhhvvvvvvvvvvvvviiiiiiiiiiiiiiggpppppkkkkkkkkkkkkkknnnnwwwwwwwwwwwbbvvvvvvvvvvvvvvydddddaaaeeeeeeeeeeeeeeeeeeyyyyyyyyyyyaammmssssssshhhhhhhhhhhhzzzqqqqqqqqqqqqqqqxxxxxxxxpppppppppppppppxxxxxxxmmmmmmmmkkkkkkkkkkkkkkdddrrrrrrrrddddddddddddddzzzzzzzzzzzzzzaaaaaammmmmmmmmmmmmmmlqqqqqqqqqpppppppppppeeeeeeiiiiiiiiiiiiiiiyyyyyyyyyyyyynnnnnnnnnnkkkkkkkkkkkkkkuuuuuuuuuuuutjjjjjssszzzzzzzzzzzzzzzzzzzddddyyyyyyyyyyyyygggxxxxxxxxxxxxxxbbbbbbbbbbbbbbnnnnnnnnnnnnqqqwwwwwwwwwwrrrrrryyyyyyfffffffffuqqqqqqqqqqmmmmmmmmmmmmmmmmmmmmmmmmsjjjjjjjjjjjjjnnnnnnnqqqqfffffffffffffkkkkkccccbtttttsssssssfffffffffccccccccccccgggggggmmmmmmmmmmhhhhhhhhhhhhzzzzzzzzzwwwwwwwwwwwwwnnnnnnnnnnnnnnngggggggggggggbbbbbbbbbbbqqqttttggwwwaauuuuuuussssfffffffffccccccccccccgggggggmmmmmmmmmmhhhhhhhhhhhhzzzzzzzzzwwwwwwwwwwwwwnnnnxxxxffffjjjjjjccccccccccccccrrhhhhhhhhhhhvvvvvvvvvvvvviiiiiiiiiiiiiiggpppppkkkkkkkkkkkkkknnnnwwwwwwwwwwwbbvvvvvvvvvvvvvvydddddaaaeeeeeeeeeeeeeeeeeeyyyyyyyyyyyaammmssssssshhhhhhhhhhhhzzzqqqqqqqqqqqqqqqxxxxxxxxpppppppppppppppxxxxxxxmmmmmmmmkkkkkkkkkkkkkkdddrrrrrrrrddddddddddddddzzzzzzzzzzzzzzaaaaaammmmmmmmmmmmmmmlqqqqqqqqqpppppppppppeeeeeeiiiiiiiiiiiiiiiyyyyyyyyyyyyynnnnnnnnnnkkkkkkkkkkkkkkuuuuuuuuuuuutjjjjjssszzzzzzzzzzzzzzzzzzzddddyyyyyyyyyyyyygggxxxxxxxxxxxxxxbbbbbbbbbbbbbbnnnnnnnnnnnnqqqwwwwwwwwwwrrrrrryyyyyyfffffffffuqqqqqqqqqqmmmmmmmmmmmmmmmmmmmmmmmmsjjjjjjjjjjjjjnnnnnnnqqqqfffffffffffffkkkkkccccbtttttsssssssfffffffffccccccccccccgggggggmmmmmmmmmmhhhhhhhhhhhhzzzzzzzzzwwwwwwwwwwwwwnnnnnnnnnnnnnnngggggggggggggbbbbbbbbbbbqqqttttggwwwaauuuuuuuuuuugggggoooooooooouutttttttttttttgggkkkkkkxxxxwwwwwwwwwwwwuuuuuuueeeeeeeeeeeeennnnnnnnnnnnnmmmmmmmmmxxxccccccrrrrzzzzzzzzqqqqqqqqqqqqqdddddddnnnnnnnnnnnnnoljjjjjjjjjjjkkkkkkkkkcaaajjjjjjjjjjkkkkkkkkktttyyyyyyyyyyyyyyywwwwwwwweeeeeeeeeeexxxxxxxxxxxxxxxffffjjjjjjccccccccccccccrrhhhhhhhhhhhvvvvvvvvvvvvviiiiiiiiiiiiiiggpppppkkkkkkkkkkkkkknnnnwwwwwwwwwwwbbvvvvvvvvvvvvvvydddddaaaeeeeeeeeeeeeeeeeebtttttsssssssfffffffffccccccccccccggggggjjjjjjjjjkkkkkkkkktttyyyyyyyyyyyyyyywwwwwwwweeeeeeeeeeexxxxxxxxxxxxxxxffffjjjjjjccccccccccccccrrhhhhhhhhhhhvvvvvvvvvvvvviiiiiiiiiiiiiiggpppppkkkkkkkkkkkkkknnnnwwwwwwwwwwwbbvvvvvvvvvvvvvvydddddaaaeeeeeeeeeeeeeeeeeeyyyyyyyyyyyaammmssssssshhhhhhhhhhhhzzzqqqqqqqqqqqqqqq";
 
         long start =  System.nanoTime();
         caesarCipherResult(message);
         long elapsedTime = System.nanoTime() - start;
 
-        double ms = TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS);
+        double ms = (double)elapsedTime / 1000000.0;
         double seconds = (double)elapsedTime / 1000000000.0;
 
-
         System.out.printf("\n---------------------\n");
-        System.out.printf("Nanoseconds: %d ms\n", elapsedTime );
-        System.out.printf("Miliseconds: %f ms\n", ms );
-        System.out.printf("Seconds: %f ms\n", seconds);
+        System.out.printf("Nanoseconds: %d \n", elapsedTime );
+        System.out.printf("Miliseconds: %f \n", ms );
+        System.out.printf("Seconds: %f \n", seconds);
 
     } 
 }
