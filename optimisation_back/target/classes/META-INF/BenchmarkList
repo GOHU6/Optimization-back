@@ -1,2 +1,3 @@
-JMH S 26 com.group.benchmark.TestBM S 63 com.group.benchmark.jmh_generated.TestBM_caesarCipherBM_jmhTest S 14 caesarCipherBM S 11 AverageTime E A 1 1 1 E I 1 2 E E I 1 1 E E I 1 1 E E E E E E E E E 
-JMH S 26 com.group.benchmark.TestBM S 65 com.group.benchmark.jmh_generated.TestBM_vigenereCipherBM_jmhTest S 16 vigenereCipherBM S 11 AverageTime E A 1 1 1 E I 1 2 E E I 1 1 E E I 1 1 E E E E E E E E E 
+JMH S 26 com.group.benchmark.TestBM S 63 com.group.benchmark.jmh_generated.TestBM_caesarCipherBM_jmhTest S 14 caesarCipherBM S 11 AverageTime E A 1 1 1 E I 2 10 T 7 2000 ms E I 2 20 T 7 2000 ms E I 1 1 E E E E E E E E E 
+JMH S 26 com.group.benchmark.TestBM S 60 com.group.benchmark.jmh_generated.TestBM_rsaCipherBM_jmhTest S 11 rsaCipherBM S 11 AverageTime E A 1 1 1 E I 2 10 T 7 2000 ms E I 2 20 T 7 2000 ms E I 1 1 E E E E E E E E E 
+JMH S 26 com.group.benchmark.TestBM S 65 com.group.benchmark.jmh_generated.TestBM_vigenereCipherBM_jmhTest S 16 vigenereCipherBM S 11 AverageTime E A 1 1 1 E I 2 10 T 7 2000 ms E I 2 20 T 7 2000 ms E I 1 1 E E E E E E E E E 
