@@ -16,14 +16,18 @@ public class RSACipher {
         RSACipher r = new RSACipher();
 
         long start =  System.nanoTime();
+        long memoryBefore = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
         r.rsaCipherResult(plainText, true);
+        long memoryAfter = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
         long elapsedTime = System.nanoTime() - start;
+        long memoryUsageInMB = (memoryAfter - memoryBefore) / (1024 * 1024);
 
         System.out.printf("\n---------------------\n");
         System.out.printf("Nanoseconds: %d \n", elapsedTime );
         System.out.printf("Miliseconds: %f \n", (double)elapsedTime / 1000000.0 );
         System.out.printf("Seconds: %f \n", (double)elapsedTime / 1000000000.0);
-        
+        System.out.println("L'utilisation mémoire est de : " + memoryUsageInMB + " MB");
+
     }
 
     // Function to generate a key pair
