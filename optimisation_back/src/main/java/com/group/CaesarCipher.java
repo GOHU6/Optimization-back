@@ -3,7 +3,7 @@ import java.util.concurrent.TimeUnit;
 //Caesar Cipher Optimization in Java
 public class CaesarCipher {
     public static void main(String[] args) {
-        String message = "&é-è_çà#8756zbhducveijhezibfizhzox";
+        String message = "SECURITYGOGO";
 
         CaesarCipher caesarCipher = new CaesarCipher();
 

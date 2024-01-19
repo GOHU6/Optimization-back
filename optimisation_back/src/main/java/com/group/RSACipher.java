@@ -10,7 +10,7 @@ import javax.crypto.Cipher;
 
 public class RSACipher {
     public static void main(String[] args) throws Exception {
-        String plainText = "INFORMATIONSECURITY";
+        String plainText = "SECURITYGOGO";
 
         RSACipher r = new RSACipher();
 
@@ -60,7 +60,7 @@ public class RSACipher {
         decryptCipher.init(Cipher.DECRYPT_MODE, privateKey);
 
         byte[] decryptedText = rsaCipher.decrypt(decryptCipher, cipherText);
-        
+
         if (syso) {
             System.out.println("Plaintext: " + new String(plainText) + "\n");
             System.out.println( new String(cipherText)+ "\n");

@@ -20,8 +20,8 @@ public class TestBM {
     public void caesarCipherBM() {
         CaesarCipher caesarCipher = new CaesarCipher();
         
-        String txt = "&é-è_çà#8756zbhducveijhezibfizhzox";
-        caesarCipher.caesarCipherResult(txt, false);
+        String plainText = "SECURITYGOGO";
+        caesarCipher.caesarCipherResult(plainText, false);
     }
 
     @Benchmark
@@ -31,7 +31,7 @@ public class TestBM {
     @Measurement(iterations = 20, time = 2000, timeUnit = TimeUnit.MILLISECONDS)
     public void vigenereCipherBM() {
         VigenereCipher vigenereCipher = new VigenereCipher();
-        String plainText = "INFORMATIONSECURITY";
+        String plainText = "SECURITYGOGO";
         String key = "MAIHY";
 
         vigenereCipher.vigenereCipherResult(plainText,key,false);
@@ -44,7 +44,7 @@ public class TestBM {
     @Measurement(iterations = 20, time = 2000, timeUnit = TimeUnit.MILLISECONDS)
     public void rsaCipherBM() throws Exception {
         RSACipher rsaCipher = new RSACipher();
-        String plainText = "INFORMATIONSECURITY";
+        String plainText = "SECURITYGOGO";
 
         rsaCipher.rsaCipherResult(plainText,false);
     }
