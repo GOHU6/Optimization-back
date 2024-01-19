@@ -1,0 +1,214 @@
+[
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "com.group.benchmark.TestBM.caesarCipherBM",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Users\\Furli\\.jdks\\openjdk-21.0.2\\bin\\java.exe",
+        "jvmArgs" : [
+            "-javaagent:C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.5\\lib\\idea_rt.jar=54697:C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.5\\bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-58",
+        "warmupIterations" : 10,
+        "warmupTime" : "2000 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "2000 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 2.5638171020931166E-8,
+            "scoreError" : 1.188807497419982E-10,
+            "scoreConfidence" : [
+                2.5519290271189167E-8,
+                2.5757051770673165E-8
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.5424773053859455E-8,
+                "50.0" : 2.558595908779475E-8,
+                "90.0" : 2.5822266234269312E-8,
+                "95.0" : 2.5829657558771496E-8,
+                "99.0" : 2.5829986717341843E-8,
+                "99.9" : 2.5829986717341843E-8,
+                "99.99" : 2.5829986717341843E-8,
+                "99.999" : 2.5829986717341843E-8,
+                "99.9999" : 2.5829986717341843E-8,
+                "100.0" : 2.5829986717341843E-8
+            },
+            "scoreUnit" : "s/op",
+            "rawData" : [
+                [
+                    2.5424773053859455E-8,
+                    2.5525781002887465E-8,
+                    2.5504747928954445E-8,
+                    2.553933489168889E-8,
+                    2.5612507923997548E-8,
+                    2.551168919294259E-8,
+                    2.5696360161091664E-8,
+                    2.581203042927885E-8,
+                    2.5747289468479856E-8,
+                    2.5733611890209958E-8,
+                    2.554784765142398E-8,
+                    2.5476232780640603E-8,
+                    2.5529012867748528E-8,
+                    2.555941025159195E-8,
+                    2.5823403545934918E-8,
+                    2.5829986717341843E-8,
+                    2.580911789377116E-8,
+                    2.5726934016492974E-8,
+                    2.5543614745243945E-8,
+                    2.580973400504272E-8
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "com.group.benchmark.TestBM.rsaCipherBM",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Users\\Furli\\.jdks\\openjdk-21.0.2\\bin\\java.exe",
+        "jvmArgs" : [
+            "-javaagent:C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.5\\lib\\idea_rt.jar=54697:C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.5\\bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-58",
+        "warmupIterations" : 10,
+        "warmupTime" : "2000 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "2000 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 0.07834227777779748,
+            "scoreError" : 0.010030820767590775,
+            "scoreConfidence" : [
+                0.0683114570102067,
+                0.08837309854538826
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.062847115625,
+                "50.0" : 0.07682424772079771,
+                "90.0" : 0.09594637367132866,
+                "95.0" : 0.1056541909090909,
+                "99.0" : 0.10613263684210526,
+                "99.9" : 0.10613263684210526,
+                "99.99" : 0.10613263684210526,
+                "99.999" : 0.10613263684210526,
+                "99.9999" : 0.10613263684210526,
+                "100.0" : 0.10613263684210526
+            },
+            "scoreUnit" : "s/op",
+            "rawData" : [
+                [
+                    0.0876757304347826,
+                    0.09039027307692307,
+                    0.07072681724137932,
+                    0.07012420689655173,
+                    0.06341494375,
+                    0.062847115625,
+                    0.07565241851851852,
+                    0.08953124347826087,
+                    0.080919372,
+                    0.08078640384615385,
+                    0.06718240666666667,
+                    0.07799607692307692,
+                    0.0692617,
+                    0.07212412,
+                    0.10613263684210526,
+                    0.06947091724137931,
+                    0.083345864,
+                    0.06900968666666667,
+                    0.08368990416666666,
+                    0.09656371818181818
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.35",
+        "benchmark" : "com.group.benchmark.TestBM.vigenereCipherBM",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\Users\\Furli\\.jdks\\openjdk-21.0.2\\bin\\java.exe",
+        "jvmArgs" : [
+            "-javaagent:C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.5\\lib\\idea_rt.jar=54697:C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.5\\bin",
+            "-Dfile.encoding=UTF-8",
+            "-Dsun.stdout.encoding=UTF-8",
+            "-Dsun.stderr.encoding=UTF-8"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-58",
+        "warmupIterations" : 10,
+        "warmupTime" : "2000 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "2000 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.1113719960235233E-6,
+            "scoreError" : 9.069797922442847E-9,
+            "scoreConfidence" : [
+                1.1023021981010804E-6,
+                1.1204417939459662E-6
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.103893972141446E-6,
+                "50.0" : 1.1101090396852438E-6,
+                "90.0" : 1.1135399944314682E-6,
+                "95.0" : 1.1519044534429032E-6,
+                "99.0" : 1.1539223738243475E-6,
+                "99.9" : 1.1539223738243475E-6,
+                "99.99" : 1.1539223738243475E-6,
+                "99.999" : 1.1539223738243475E-6,
+                "99.9999" : 1.1539223738243475E-6,
+                "100.0" : 1.1539223738243475E-6
+            },
+            "scoreUnit" : "s/op",
+            "rawData" : [
+                [
+                    1.1105926335965702E-6,
+                    1.1107458919762495E-6,
+                    1.1109745568929632E-6,
+                    1.1539223738243475E-6,
+                    1.1100538272559141E-6,
+                    1.1066204447264468E-6,
+                    1.1094840416051156E-6,
+                    1.1111040793797792E-6,
+                    1.1117524305513305E-6,
+                    1.109482053338791E-6,
+                    1.1060933346828848E-6,
+                    1.103893972141446E-6,
+                    1.1040622563392964E-6,
+                    1.1063611747483503E-6,
+                    1.1061261768140181E-6,
+                    1.1135639661954606E-6,
+                    1.1101642521145734E-6,
+                    1.113324248555537E-6,
+                    1.1129449890159668E-6,
+                    1.1061732167154285E-6
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
