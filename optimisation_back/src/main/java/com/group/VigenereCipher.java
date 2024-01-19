@@ -1,8 +1,9 @@
 package com.group;
 
+//RSA Cipher Optimization in Java
 public class VigenereCipher {
     public static void main(String[] args) {
-        
+        // Define the plaintext and key as strings
         String plainText = "SECURITYGOGO";
         String key = "MAIHY";
 
@@ -18,9 +19,12 @@ public class VigenereCipher {
         System.out.printf("Seconds: %f \n", (double)elapsedTime / 1000000000.0);
 
     }
+
+    // This method expands the key to the same length as the message
     private String keyExpanding(String mess, String key){
         String result = "";
         int i = 0;
+        // Repeat the key until it is the same length as the message
         while (i < mess.length()) {
             result += String.valueOf(key.charAt(i % key.length()));
             i++;

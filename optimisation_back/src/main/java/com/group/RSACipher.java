@@ -8,6 +8,7 @@ import java.security.PublicKey;
 
 import javax.crypto.Cipher;
 
+//RSA Cipher Optimization in Java
 public class RSACipher {
     public static void main(String[] args) throws Exception {
         String plainText = "SECURITYGOGO";
@@ -25,37 +26,37 @@ public class RSACipher {
         
     }
 
-    // Fonction pour générer une paire de clés
+    // Function to generate a key pair
     private KeyPair generateKeyPair() throws NoSuchAlgorithmException {
         KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
         keyGen.initialize(2048);
         return keyGen.generateKeyPair();
     }
 
-    // Fonction pour chiffrer
+    // Function to encrypt
     private byte[] encrypt(Cipher cipher, String input) throws Exception {
         return cipher.doFinal(input.getBytes());
     }
 
-    // Fonction pour déchiffrer
+    // Function to decrypt
     private byte[] decrypt(Cipher cipher, byte[] cipherText) throws Exception {
         return cipher.doFinal(cipherText);
     }
 
     public void rsaCipherResult(String plainText, boolean syso) throws Exception{
         RSACipher rsaCipher = new RSACipher();
-        // Étape 1 : Générer une paire de clés
+        // Generate a key pair
         KeyPair keyPair = rsaCipher.generateKeyPair();
         PrivateKey privateKey = keyPair.getPrivate();
         PublicKey publicKey = keyPair.getPublic();
 
-        // Étape 2 : Chiffrer
+        // Encrypt
         Cipher encryptCipher = Cipher.getInstance("RSA");
         encryptCipher.init(Cipher.ENCRYPT_MODE, publicKey);
 
         byte[] cipherText = rsaCipher.encrypt(encryptCipher, plainText);
 
-        // Étape 3 : Déchiffrer
+        // Decrypt
         Cipher decryptCipher = Cipher.getInstance("RSA");
         decryptCipher.init(Cipher.DECRYPT_MODE, privateKey);
 

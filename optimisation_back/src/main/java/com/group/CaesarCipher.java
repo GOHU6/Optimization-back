@@ -1,5 +1,5 @@
 package com.group;
-import java.util.concurrent.TimeUnit; 
+
 //Caesar Cipher Optimization in Java
 public class CaesarCipher {
     public static void main(String[] args) {
@@ -7,9 +7,9 @@ public class CaesarCipher {
 
         CaesarCipher caesarCipher = new CaesarCipher();
 
-        long start =  System.nanoTime();
-        caesarCipher.caesarCipherResult(message, true);
-        long elapsedTime = System.nanoTime() - start;
+        long start =  System.nanoTime(); // get the current time in nanoseconds
+        caesarCipher.caesarCipherResult(message, true); // encrypt the message
+        long elapsedTime = System.nanoTime() - start; // calculate the elapsed time
 
         System.out.printf("\n---------------------\n");
         System.out.printf("Nanoseconds: %d \n", elapsedTime );
@@ -18,6 +18,7 @@ public class CaesarCipher {
 
     }
 
+    // encrypt the given text using a Caesar cipher with the given shift value
     public String encrypt(String text, int shift) {
         char[] chars = text.toCharArray();
         for (int i = 0; i < chars.length; i++) {
@@ -25,9 +26,12 @@ public class CaesarCipher {
         }
         return new String(chars);
     }
+
+    // decrypt the given text using a Caesar cipher with the given shift value
     public String decrypt(String text, int shift) {
         return encrypt(text, 256 - shift);
     }
+
     public void caesarCipherResult(String message, boolean syso){
         String encrypted = encrypt(message, 1);
         String decrypted = decrypt(encrypted, 1);
